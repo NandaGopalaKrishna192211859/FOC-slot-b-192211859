@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+	int n,temp,i,p;
+	printf("enter the number");
+	scanf("%d",&n);
+	temp=n;
+	while(temp!=0)
+	{
+		i++;
+		temp=temp/10;
+	}
+	p=pow(10,i-1);
+	
+	while(p!=0)
+	{
+		printf("%d\n",n/p);
+		n=n%p;
+		p=p/10;
+	}
+	return 0;
+}
