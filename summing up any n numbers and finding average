@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+
+int main()
+{
+	int i,n;
+	float sum,avg;
+	sum=0;
+	printf("enter end number");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		sum=sum+i;
+	}
+	avg=sum/n;
+	printf("\n sum if %f",sum);
+	printf("\n average is %f",avg);
+	
+	return 0;
+	
+}
